@@ -1,5 +1,14 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .modal {
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: 1fr 10px 1fr;
 	grid-template-columns: 1fr 1fr;
 	gap: 10px;
 	padding: 10px;
@@ -15,6 +24,8 @@
 	overflow-x: auto;
 	opacity: 0;
 	visibility: hidden;
+	-webkit-transition: var(--transition-time);
+	-o-transition: var(--transition-time);
 	transition: var(--transition-time);
 }
 
@@ -36,27 +47,41 @@
 .modal.is-open {
 	opacity: 1;
 	visibility: visible;
+	-webkit-transition: var(--transition-time);
+	-o-transition: var(--transition-time);
 	transition: var(--transition-time);
 }
 
 .fade {
 	opacity: 0;
+	-webkit-transition: var(--transition-time);
+	-o-transition: var(--transition-time);
 	transition: var(--transition-time);
 }
 
 .fade.animate-open {
 	opacity: 1;
+	-webkit-transition: var(--transition-time);
+	-o-transition: var(--transition-time);
 	transition: var(--transition-time);
 }
 
 .fadeInUp {
 	opacity: 0;
-	transform: translateY(-100px);
+	-webkit-transform: translateY(-100px);
+	    -ms-transform: translateY(-100px);
+	        transform: translateY(-100px);
+	-webkit-transition: var(--transition-time);
+	-o-transition: var(--transition-time);
 	transition: var(--transition-time);
 }
 
 .fadeInUp.animate-open {
 	opacity: 1;
-	transform: translateY(0);
+	-webkit-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	        transform: translateY(0);
+	-webkit-transition: var(--transition-time);
+	-o-transition: var(--transition-time);
 	transition: var(--transition-time);
 }
