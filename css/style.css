@@ -193,8 +193,8 @@ body {overflow-anchor: none;}
 .large-image {
     max-width: 450px;
     height: 450px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    -o-object-fit: contain;
+       object-fit: contain;
     margin-bottom: 10px;
 }
 .small-img__container {
